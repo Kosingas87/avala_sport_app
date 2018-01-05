@@ -27,4 +27,5 @@
   (.stop @server)
   (reset! server nil))
 
-(start-server "8080")
+(start-server "5000")
+(stop-server)

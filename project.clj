@@ -7,6 +7,7 @@
                [hiccup-table "0.2.0"]
                [ring-server "0.3.1"]
                ;;JDBC dependencies
+                 [midje "1.8.3"]
                [org.clojure/java.jdbc "0.2.3"]
                [org.xerial/sqlite-jdbc "3.7.2"]]
   :plugins [[lein-ring "0.8.12"]]

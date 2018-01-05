@@ -5,6 +5,6 @@
   (html5
     [:head
      [:title "Welcome to Avala Sport"]
-     (include-css "/css/screen.css")
+     (include-css "/css/style.css")
      ]
     [:body body]))

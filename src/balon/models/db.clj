@@ -13,10 +13,12 @@
     (sql/create-table
       :termin
       [:id "INTEGER PRIMARY KEY AUTOINCREMENT"]
-      [:vreme "TEXT"]
+      [:vreme "INTEGER"]
       [:tip "TEXT"]
       [:aktivnost "TEXT"]
       [:broj_igraca "INTEGER"]
+      [:kontakt "TEXT"]
+      [:dan "TEXT"]
       [:datum_rezervacije "TIMESTAMP DEFAULT CURRENT_TIMESTAMP"])))
 
 
@@ -24,17 +26,17 @@
   (sql/with-connection
     db
     (sql/with-query-results res
-                            ["SELECT * FROM termin ORDER BY id ASC"]
+                            ["SELECT * FROM termin ORDER BY dan ASC, vreme ASC"]
                             (doall res))))
 
 
-(defn save-termin [vreme tip aktivnost broj_igraca]
+(defn save-termin [vreme tip aktivnost broj_igraca kontakt dan]
   (sql/with-connection
     db
     (sql/insert-values
       :termin
-      [:vreme :tip :aktivnost :broj_igraca :datum_rezervacije]
-      [vreme tip aktivnost broj_igraca (new java.util.Date)])))
+      [:vreme :tip :aktivnost :broj_igraca :kontakt :dan :datum_rezervacije]
+      [vreme tip aktivnost broj_igraca kontakt dan (new java.util.Date)])))
 
 (defn delete-termin [id]
   (sql/with-connection
@@ -51,10 +53,10 @@
                               ["SELECT * FROM termin WHERE id= ?" id]
                               (doall res)))))
 
-(defn update-termin [id vreme tip aktivnost broj_igraca]
+(defn update-termin [id vreme tip aktivnost broj_igraca kontakt dan]
   (sql/with-connection
     db
     (sql/update-values
       :termin
       ["id=?" id]
-      {:vreme vreme :tip tip :aktivnost aktivnost :broj_igraca broj_igraca})))
+      {:vreme vreme :tip tip :aktivnost aktivnost :broj_igraca broj_igraca :kontakt kontakt :dan  dan })))

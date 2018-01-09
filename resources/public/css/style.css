@@ -1,0 +1,208 @@
+header{
+background-image: url(../images/balon.jpg);
+ margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    height: 300px;
+}
+
+
+body {
+    color: #555;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    height: 600px;
+
+
+}
+submit-button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+submit-button:hover {background-color: #3e8e41}
+
+submit-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+  text-align: center;
+
+}
+
+.back {
+  position: fixed;
+  bottom: 20px;
+}
+#nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#naslov ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+#nav ul li a {
+	display: block;
+	font-size: 22px;
+	color: black;
+	height: 17px;
+	line-height: 17px;
+	padding: 15px 10px 10px;
+	font-style: normal;
+	text-decoration: none;
+	width: 220px;
+	border: 1px solid #000000;
+	-webkit-box-shadow: inset 2px 2px #000000;
+    	box-shadow: 2px 2px #000000;
+    	border-radius: 14px;
+    	background: linear-gradient(to bottom right, white, gray);
+	}
+
+#nav a:hover{
+
+    	color: #0392D8;
+    }
+
+
+
+#meni a{
+    display: block;
+	font-size: 22px;
+	color: #FFFFFF;
+	height: 17px;
+	line-height: 17px;
+	padding: 15px 10px 10px;
+	font-style: normal;
+	text-decoration: none;
+	width: 80px;
+
+}
+footer{
+background-image: url(../images/balon1.jpg);
+ margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+    height: 450px;
+}
+
+#naj ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+
+
+#naj ul li a {
+	display: block;
+	font-size: 22px;
+	color: black;
+	height: 17px;
+	line-height: 17px;
+	padding: 15px 10px 10px;
+	font-style: normal;
+	text-decoration: none;
+	width: 220px;
+	border: 1px solid #000000;
+	-webkit-box-shadow: inset 2px 2px #000000;
+    	box-shadow: 2px 2px #000000;
+    	border-radius: 14px;
+    	background: linear-gradient(to bottom right, white, gray);
+	}
+
+#naz a:hover{
+
+    	color: #0392D8;
+    }
+
+#naz ul{
+    	margin:0;
+    	padding:0;
+    	list-style:none;
+    }
+
+
+#naz ul li a {
+    	display: block;
+    	font-size: 22px;
+    	color: black;
+    	height: 17px;
+    	line-height: 17px;
+    	padding: 15px 10px 10px;
+    	font-style: normal;
+    	text-decoration: none;
+    	width: 220px;
+    	border: 1px solid #000000;
+    	-webkit-box-shadow: inset 2px 2px #000000;
+        	box-shadow: 2px 2px #000000;
+        	border-radius: 14px;
+        	background: linear-gradient(to bottom right, white, gray);
+    	}
+
+    #naj a:hover{
+
+        	color: #0392D8;
+        }
+
+#tablica1{
+    margin-right: auto;
+	margin-left: auto;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	width: 600px;
+
+}
+
+table th{
+   font-size: 15px;
+	color: black;
+	height: 15px;
+	padding: 15px 10px 10px;
+	-webkit-box-shadow: inset 2px 2px #000000;
+        	box-shadow: 2px 2px #000000;
+
+
+}
+
+
+table td{
+   font-size: 13px;
+	color: black;
+	height: 14px;
+	padding: 15px 10px 10px;
+	-webkit-box-shadow: inset 2px 2px #000000;
+        	box-shadow: 2px 2px #000000;
+
+
+}
+table{
+border: 1px solid #000000;
+
+    	border-radius: 2px;
+
+}
+
